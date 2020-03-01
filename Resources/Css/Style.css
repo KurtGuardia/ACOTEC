@@ -149,7 +149,7 @@ h3{
 
 
 header{
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(233, 3, 3, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(233, 3, 3, 0));
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -254,4 +254,42 @@ header{
 .tech-photo img:hover{
     transform: scale(1.055);
     opacity: 1;
+}
+
+
+/*-----------------------------------------------*/
+/*-----HOW TO GET IT - STEPS-----*/
+/*-----------------------------------------------*/
+.steps-box{
+    margin-top: 30px;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding: 3%;
+}
+
+.steps-box:last-child{
+    padding: 3%;
+}
+
+.app-screen{
+    width: 90%;
+}
+
+.works-steps{
+    margin-bottom: 50px;
+}
+
+.works-step div{
+    color: #219251;
+    border: 2px solid #219251;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
 }
