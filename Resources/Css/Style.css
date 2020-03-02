@@ -323,6 +323,33 @@ header{
 }
 
 /*-----------------------------------------------*/
+/*-----CONTACT-----*/
+/*-----------------------------------------------*/
+
+.video-uses video{
+    width: 100%;
+    opacity: 1;
+    
+}
+
+.video-uses_content {
+    background-color: black;
+    
+}
+
+.text-uses{
+    margin: 0; 
+                   /*Esta vaina es para que le pueda sacar el margin tanto a los video como al texto*/
+}
+
+.texto-uses p{
+    padding: 15% 10%;               /*Esta vaina es para que solo el texto sea blanco mientras el video sea negro*/    
+}
+
+.section-uses p{
+    margin-bottom: 80px;
+}
+/*-----------------------------------------------*/
 /*-----TESTIMONIALS-----*/
 /*-----------------------------------------------*/
 
@@ -379,7 +406,7 @@ cite:before{
     font-size:400%;
     display: block;
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
     right: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
