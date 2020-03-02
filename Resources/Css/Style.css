@@ -17,6 +17,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clear-fix {zoom: 1}
+.clear-fix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*-----------------------------------------------*/
 /*-----REUSABLE COMPONENTS-----*/
 /*-----------------------------------------------*/
@@ -103,7 +112,8 @@ h3{
 /*-------BUTTONS------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -113,12 +123,15 @@ h3{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #0a8a9b;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #219251;
     border: 1px solid #219251;
     color: #fff;
@@ -126,7 +139,9 @@ h3{
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     border: 1px solid #0a8a9b;
     background-color: #0a8a9b;
 }
@@ -162,7 +177,6 @@ header{
     height: 100%;
     width: 100%;
     z-index: -1;
-    
     overflow: hidden;
 }
 
@@ -260,24 +274,27 @@ header{
 /*-----------------------------------------------*/
 /*-----HOW TO GET IT - STEPS-----*/
 /*-----------------------------------------------*/
-.steps-box{
-    margin-top: 30px;
+
+.section-steps{
+    background-color: #06fc0623;
 }
 
 .steps-box:first-child{
     text-align: right;
     padding: 3%;
+    margin-top: 30px;
 }
 
 .steps-box:last-child{
     padding: 3%;
+    margin-top: 70px;
 }
 
 .app-screen{
     width: 90%;
 }
 
-.works-steps{
+.works-step{
     margin-bottom: 50px;
 }
 
@@ -292,4 +309,114 @@ header{
     padding: 5px;
     float: left;
     font-size: 150%;
+    margin-right: 25px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*-----------------------------------------------*/
+/*-----TESTIMONIALS-----*/
+/*-----------------------------------------------*/
+
+.testimonials-video{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.testimonials-video_content{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.section-testimonials{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+}
+.testimonials-container{
+    position: relative;
+    top: 0;
+    padding: 80px;
+    color: #fff;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 50px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+cite:before{
+    content: "\201E";
+    font-size:400%;
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    margin-top: 70px;
+}
+
+cite img{
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*-----------------------------------------------*/
+/*-----CONTACT-----*/
+/*-----------------------------------------------*/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #219251;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 25px 0;
 }
