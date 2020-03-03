@@ -30,27 +30,129 @@
         margin-top: 10px;
         width: 49.2%;
     }
-    .works-steps{
+    .works-step{
         margin-bottom: 40px;
     }
-    .works-steps:last-of-type{
+    .works-step:last-of-type{
         margin-bottom: 60px;
     }
-    .app-screen{
-        width: 70%;
+    .btn-app img{
+        height: 40px;
     }
-    
-    
-
+    .footer-nav ul{
+        font-size: ;
+    }
+    .footer-nav li{
+        font-size: 15px;
+    }
+    .main-nav li{
+        font-size: 16px;
+    }
+    .contact-form{
+        width: 80%;
+    }
 }
 
 
 /*phones to small tablets*/
 @media only screen and (max-width: 767px){
+    body{
+        font-size: 17px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row,
+    .hero-text-box{
+        padding: 0 4%;
+    }
+    .col{
+        width: 100%;
+    }
+    .main-nav{
+        display: none;
+    }
+    h1{
+        font-size: 180%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .long-copy{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .works-step div{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 100%;
+    }
+    .works-step{
+        margin-bottom: 20px;
+        font-size: 130%;
+    }
+    .works-step:last-of-type{
+        margin-bottom: 50px;
+    }
+    .steps-box:last-child{
+        width: 80%;
+        margin-left: 15%;
+    }
+    .steps-box:first-child{
+        margin-top: 0px;
+        text-align: center;
+    }
+    .app-screen{
+        width: 70%;
+    }
+    .text-uses video{
+        width: 70%;
+        -webkit-box-ordinal-group: 1;
+                order: 0;
+    }
+    .text-uses {
+        text-align: center;
+    }
+    .video-uses{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    .texto-uses{
+        -webkit-box-ordinal-group: 2;
+                order: 1;
+    }
+    .texto-uses p{
+        padding: 5%;
+        margin-bottom: 60px;
+    }
+    .testimonials-container h2{
+        font-size: 140%;
+    }
+    footer .col{
+        width: 49%;
+    }
 
 }
 
 /*Small phones like iPhone 4 or 5*/
 @media only screen and (max-width: 480px){
-
+    h2{
+        font-size: 130%;
+    }
+    .testimonials-container h2{
+        font-size: 120%;
+    }
+    textarea{
+        margin-top: 20px;
+        height:95px;
+    }
+    form .row{
+        margin: 20px;
+    }
+    
 }
