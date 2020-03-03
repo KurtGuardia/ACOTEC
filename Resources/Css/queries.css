@@ -1,0 +1,56 @@
+
+/*Big tablets to small laptops*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+      width: 80%;
+      padding: 0 2%;
+    }
+    .row {
+      padding: 0 2%;
+    }
+    .steps-box:last-child{
+        margin-top: 10px;
+        width: 49.2%;
+    }
+  }
+
+
+/*Small tablet to big tablet*/
+@media only screen and (max-width: 1023px){
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box{
+        margin-top: 10px;
+    }
+    .steps-box:last-child{
+        margin-top: 10px;
+        width: 49.2%;
+    }
+    .works-steps{
+        margin-bottom: 40px;
+    }
+    .works-steps:last-of-type{
+        margin-bottom: 60px;
+    }
+    .app-screen{
+        width: 70%;
+    }
+    
+    
+
+}
+
+
+/*phones to small tablets*/
+@media only screen and (max-width: 767px){
+
+}
+
+/*Small phones like iPhone 4 or 5*/
+@media only screen and (max-width: 480px){
+
+}
