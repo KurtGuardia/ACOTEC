@@ -243,13 +243,27 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #219250b0;
+    background-color: #219250d0;
+    z-index: 9999;
 }
 
+.sticky .main-nav {
+    margin-top: 20px;
+}
+.sticky .logo{
+    height: 60px;
+    margin-top: 2px;
+}
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
-    padding: 8px 0;
-    color: #fff;
+    font-size: 90%;
+    padding: 18px 0;
+    color: #000;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active{
+    border-bottom: 4px solid #2fc6da;
 }
 /*-----------------------------------------------*/
 /*-----TECH IMAGES-----*/
@@ -574,4 +588,27 @@ footer p{
 .me:hover {
     color: #c80808;
     font-weight: 400;
+}
+
+/*-----------------------------------------------*/
+/*-----ANIMATION-----*/
+/*-----------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5 {
+    opacity: 0;
+}
+.js--wp-6 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated {
+    opacity: 1;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Vendors/Css/normalize.css" type="text/css">
     <link rel="stylesheet" href="Vendors/Css/grid.css" type="text/css">
     <link rel="stylesheet" href="Vendors/Css/ionicons.min.css" type="text/css">
+    <link rel="stylesheet" href="Vendors/Css/animate.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="Resources/Css/Style.css" >
     <link rel="stylesheet" type="text/css" href="Resources/Css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
@@ -15,15 +16,15 @@
 
 <body>
 
-    <header>
-        <nav class="sticky">
+    <header id="start">
+        <nav>
             <div class="row">
-                <img src="Resources/Img/acotec-logo.png" alt="acotec-logo" class="logo">
+                <a href="#start"><img src="Resources/Img/acotec-logo.png" alt="acotec-logo" class="logo"></a>
                 <ul class="main-nav">
-                    <li><a href="#">Be Smart - Get Smart</a></li>
-                    <li><a href="#">How to get it</a></li>
-                    <li><a href="#">How to use it</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#features">Be Smart - Get Smart</a></li>
+                    <li><a href="#get">How to get it</a></li>
+                    <li><a href="#uses">How to use it</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,12 +37,12 @@
 
         <div class="hero-text-box">
             <h1>Smart Home, Smart Solutions <br> Welcome to the future.</h1>
-            <a class="btn btn-full" href="#">Solutions</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-uses" href="#">Solutions</a>
+            <a class="btn btn-ghost js--scroll-to-features" href="#">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Be smart &mdash; Get smart</h2>
             <p class="long-copy">
@@ -49,7 +50,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -128,11 +129,11 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="get">
         <div class="row">
             <h2>How to get it &mdash; Easy as 1, 2, 3</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-2">
             <div class="col span-1-of-2 steps-box">
                 <img src="Resources/Img/smarthomeapp.png" alt="iphone with app" class="app-screen">
             </div>
@@ -160,14 +161,14 @@
         </div>
     </section>
 
-    <section class="section-uses">
+    <section class="section-uses js--section-uses" id="uses">
         <div class="row">
             <h2>How to use it</h2>
             <p class="long-copy">
                 There are different ways to use the implemented smart-home technology in your home. Either it is with your phone, letting the house act on it's own or even just talking to it!
             </p>
         </div>
-        <div class="row video-uses"> 
+        <div class="row video-uses js--wp-3"> 
             <div class="col span-1-of-2 text-uses">
                 <video class="uses-video_content" autoplay muted loop>
                     <source src="Resources/Img/Alexa haciendo cosas.webm" type="video/webm">
@@ -180,7 +181,7 @@
                 </p>
             </div>
         </div>
-        <div class="row video-uses" id="flex-container"> 
+        <div class="row video-uses js--wp-4" id="flex-container"> 
             <div class="col span-1-of-2 text-uses texto-uses" id="texto-switch">
                 <p>
                     Mobile phones are an extension our ourselves, now they become a bridge to know what happens in our house, see the security system, monitor the sensors, know when somehing was activated and actually do things! like changing colors.
@@ -193,7 +194,7 @@
                 </video>
             </div>
         </div>
-        <div class="row video-uses"> 
+        <div class="row video-uses js--wp-5"> 
             <div class="col span-1-of-2 text-uses">
                 <video class="uses-video_content" autoplay muted loop>
                     <source src="Resources/Img/automate-home-white-_online-video-cutter.com_.webm" type="video/webm">
@@ -242,7 +243,7 @@
         </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
         <div class="row">
             <h2>Would you like an estimated price?</h2>
         </div>
@@ -300,7 +301,7 @@
                     </div>
                 </div>
                 
-                <div class="row">
+                <div class="row js--wp-6">
                     <div class="col span-1-of-3">
                         <label for="submit">&nbsp;</label>
                     </div>
@@ -343,7 +344,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="Resources/Js/script.js"></script>
-    
+    <script src="Vendors/Js/jquery.waypoints.min.js"></script>
 </body>
 
 </html>
