@@ -205,6 +205,8 @@ header{
     margin-top: 20px;
 }
 
+/*-------Main Nav------*/
+
 .main-nav{
     float: right;
     list-style: none;
@@ -234,6 +236,21 @@ header{
     border-bottom: 4px solid #219251;
 }
 
+/*-------Sticky Nav------*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #219250b0;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+}
 /*-----------------------------------------------*/
 /*-----TECH IMAGES-----*/
 /*-----------------------------------------------*/
@@ -399,7 +416,7 @@ blockquote{
     font-style: italic;
     line-height: 145%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 blockquote:before{

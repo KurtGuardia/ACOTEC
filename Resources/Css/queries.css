@@ -39,9 +39,6 @@
     .btn-app img{
         height: 40px;
     }
-    .footer-nav ul{
-        font-size: ;
-    }
     .footer-nav li{
         font-size: 15px;
     }
@@ -132,11 +129,41 @@
     }
     .testimonials-container h2{
         font-size: 140%;
+        padding-top: 5%;
+        margin-bottom: 10px;
     }
     footer .col{
         width: 49%;
     }
-
+    .section-testimonials{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url("../Img/customer-back.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .testimonials-video_content{
+        display: none;
+    }
+    .testimonials-container{
+        padding: 10px;
+    }
+    cite:before{
+        display: none;
+    }
+    cite{
+        margin: 1%;
+        
+        padding-top: 10px;
+    }
+    blockquote{
+        margin-top: 10px;
+        
+    }
+    blockquote:before{
+        font-size: 170%;
+    }
+    cite img{
+        height: 55px;
+    }
 }
 
 /*Small phones like iPhone 4 or 5*/
