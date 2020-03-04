@@ -258,13 +258,28 @@ header{
 .sticky .main-nav li a:visited{
     font-size: 90%;
     padding: 18px 0;
-    color: #000;
+    color: #fff;
 }
 
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active{
     border-bottom: 4px solid #2fc6da;
 }
+
+/*-------mobile Nav------*/
+
+.mobile-nav-icon {
+ float: right;
+ margin-top: 30px;
+ cursor: pointer;
+ display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+
 /*-----------------------------------------------*/
 /*-----TECH IMAGES-----*/
 /*-----------------------------------------------*/
